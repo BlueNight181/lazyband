@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.row{
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header{
+  position: relative;
+  height: 100vh;
+}
+
+#blue{
+  color: rgb(88, 88, 235);
+}
+#night{
+  color: rgb(0, 0, 0);
+  transition: 1s;
+}
+#night:hover{
+  color: brown;
+  transition: 1s;
+
+}
+
+.zoom{
+    animation: zoom 15s ease 0s normal both infinite !important;
+    -webkit-animation: zoom 15s ease 0s normal both infinite;
+    -moz-animation: zoom 15s ease 0s normal both infinite;
+    -ms-animation: zoom 15s ease 0s normal both infinite;
+    -o-animation: zoom 15s ease 0s normal both infinite;
+
+}
+
+@keyframes zoom {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 110% 110%;
+  }
+}
+
+
+.header_layout {
+  justify-content: center;
+  margin: 0;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+.left_header {
+  display: flex;
+  z-index: 1;
+}
+
+.left_header-logo {
+}
+
+.left_header-logo img {
+  width: 77%;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.left_header-band {
+  margin: auto 0;
+}
+
+.left_header-band h3 {
+  color: aliceblue;
+  align-self: center;
+  margin-bottom: 5px;
+  font-size: 28px;
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+
+.left_header-band h5 {
+  font-size: 12px;
+  letter-spacing: 10px;
+  color: rgb(97, 3, 3);
+  font-weight: 700;
+}
+
+.right_header {
+  margin: auto 0;
+}
+
+.right_header-menu {
+}
+
+.right_header .right_header-menu .menu_ul {
+  display: flex;
+  float: right;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.right_header .right_header-menu .menu_ul li .menu-link {
+  margin-left: 40px;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+
+.menu-link i{
+    margin-left: 5px;
+}
+
+.right_header .right_header-menu .menu_ul .menu-link:hover {
+  transition: 0.2s;
+  color: rgb(245, 80, 80);
+}
+
+.menu_ul .menu_li {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.hidden_menu {
+  background-color: rgb(238, 238, 238);
+  position: absolute;
+  margin: 20px 0 0 20px;
+}
+
+
+.dropdown-item {
+  padding: 15px 70px 15px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.right_header-menu .menu_ul .hidden_menu {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-in;
+    transition: max-height 0.3s ease-in;
+}
+
+
+.right_header-menu .menu_ul .menu_li:hover > .hidden_menu{
+    max-height: 200px;
+}
+
+.hidden_menu{
+    border-radius: 5px;
+}
+
+.hidden_menu .dropdown-item:hover{
+  transition: 0.2s;
+  color: rgb(137, 153, 243);
+  background-color: whitesmoke;
+  font-weight: 500;
+}
+
+
+.object:hover{
+  transition: 2s;
+} 
+
+.content__header{
+  z-index: 2;
+  text-align: center;
+  position: relative;
+ height: 555px;
+}
+
+.content__slider{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-img {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.content__header-title h1{
+  font-size: 50px;
+  letter-spacing: 10px;
+  color: rgb(209, 64, 64);
+}
+.content__header-title h4{
+ margin:7px 0 15px 0;
+ color: rgb(255, 255, 255);
+}
+
+button:focus {
+  outline:0 !important;
+  box-shadow: none !important;
+}
+
+.content__header-btn i{
+  font-size: 80px;
+  transition: 0.3s;
+  color: rgb(211, 207, 207);
+  cursor: pointer;
+}
+
+.content__header-btn i:hover{
+color: rgb(245, 80, 80);
+transition: 0.3s;
+transform: scale(0.9);
+}
+
+.info__btn{
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: 0.8s;
+}
+.info__btn:hover{
+  color: rgb(245, 80, 80);
+  background-color: black;
+  transform: scale(0.9);
+  transition: 0.4s;
+}
+
+
+/* main */
+/* .main__content{
+  position: absolute;
+  bottom: -100vh;
+} */
+
+
+/*  */
+
