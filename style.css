@@ -465,9 +465,21 @@ button:focus {
   transform: translateY(0) scale(1.05) !important;
   opacity: 0.5;
   background-image: linear-gradient(rgb(253, 253, 253), rgb(0, 0, 0)) !important;
-
 }
 
+#member_btn {
+  margin: 25px 0 25px;
+  background-color: black;
+  outline: none;
+  border: none;
+  color: rgb(164, 164, 165);
+  font-weight: 500;
+
+  padding: 12px;
+}
+#member_btn:hover {
+  color: white;
+}
 
 /* footer */
 
