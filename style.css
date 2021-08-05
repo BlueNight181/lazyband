@@ -29,9 +29,21 @@ a {
   text-decoration: none;
 }
 
+.univer{
+  margin-top: -60px;
+  position: relative;
+}
+
 .header {
   position: relative;
   height: 100vh;
+}
+
+#navbar{
+  padding: 0;
+  height: 86px;
+  background: black;
+  z-index: 9999;
 }
 
 #blue {
@@ -75,6 +87,10 @@ a {
 .left_header {
   display: flex;
   z-index: 1;
+}
+
+.left_header-logo{
+  margin: auto 0;
 }
 
 .left_header-logo img {
@@ -177,6 +193,7 @@ a {
 }
 
 .content__slider {
+  margin-top: 75px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -533,6 +550,23 @@ button:focus {
   transition: 0.5s;
 }
 
+#ballon{
+  position: sticky;
+  top: 660px !important;
+  left: 1445px !important;
+  cursor: pointer;
+  font-size: 60px;
+  color: rgb(172, 16, 16);
+  z-index: 999;
+  transition: 0.5s;
+
+}
+
+#ballon:hover{
+  transition: 0.5s;
+  color: rgb(118, 144, 231);
+}
+
 /* album */
 
 .album{
@@ -599,4 +633,34 @@ button:focus {
 .status h3{
   font-size: 24px;
   margin-bottom: 14px;
+}
+
+/* scroll */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track-piece {
+  border-radius: 10px;
+  border-radius: 20px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2b2e42; 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
