@@ -363,8 +363,8 @@ button:focus {
 
 .object__logo {
   background-color: #e7e7ee;
-  background-image: linear-gradient(rgb(230, 207, 159), rgb(154, 120, 233));
-  padding: 50px 0;
+  background-image: linear-gradient(rgb(253, 233, 189), rgb(173, 144, 241));
+  padding: 30px 0;
 }
 .content__social .content__social-link {
   margin: 0 auto;
@@ -397,11 +397,11 @@ button:focus {
 }
 
 /* Member */
+
 .member {
   background: #13181d;
   text-align: center;
-  padding-bottom: 18px;
-
+  padding-bottom: 58px;
 }
 
 .member__content {
@@ -531,4 +531,72 @@ button:focus {
 .footer__conntent-link:hover {
   color: rgb(118, 144, 231);
   transition: 0.5s;
+}
+
+/* album */
+
+.album{
+   background: #13181d;
+   padding-bottom: 120px;
+}
+
+#album{
+  color: #13181d;
+  padding: 120px 0;
+}
+
+.playlist__content{
+  margin: 0 auto;
+}
+
+/* slider */
+
+.carousel-inner .carousel-item{
+  max-height: 600px;
+}
+
+.carousel-caption{
+  margin-bottom: 170px;
+}
+
+.carousel-caption h5{
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+}
+
+/* Main title */
+
+.about{
+  justify-content: center;
+  background: white;
+  padding: 100px 0;
+}
+
+.about__left, .about__right{
+  margin: 0 auto;
+}
+
+.about__left img{
+  border-radius: 8px;
+  width: 100%;
+}
+
+.about__right{
+  font-family: 'Staatliches', cursive;
+}
+
+.about__right #about{
+ color: #333333;
+}
+
+.about__right .main__content-title{
+  padding: 0 0 20px 0;
+}
+
+.status{
+}
+
+.status h3{
+  font-size: 24px;
+  margin-bottom: 14px;
 }
