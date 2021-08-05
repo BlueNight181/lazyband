@@ -42,8 +42,13 @@ a {
 #navbar{
   padding: 0;
   height: 86px;
-  background: black;
+  /* background: black; */
   z-index: 9999;
+}
+
+.scrolling-active{
+  background-color: black;
+  box-shadow:  0 3px 1rem rgba(0, 0, 0,.1);
 }
 
 #blue {

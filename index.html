@@ -45,9 +45,9 @@
 
 <body>
   <div id="Demo" class="univer">
-    <i class="fab fa-fly"id="ballon" onclick="flyUp()"></i>
+    <i class="fab fa-fly" id="ballon" onclick="flyUp()"></i>
     <section class="header">
-      <div class="header__slide" >
+      <div class="header__slide">
         <ul class="slides" id="slideshow">
           <li style="position: relative;">
             <div class="header-img zoom" style="background-image: url(images/1216364.jpg);"></div>
@@ -57,35 +57,35 @@
           </li>
         </ul>
       </div>
-      <div class="header_layout row" >
+      <div class="header_layout row">
         <div id="navbar" class="header_layout row">
-        <div class="left_header col-md-4">
-          <div class="left_header-logo">
-            <img src="images/LOGO (black bg) (1).jpg" alt="" />
+          <div class="left_header col-md-4">
+            <div class="left_header-logo">
+              <img src="images/LOGO (black bg) (1).jpg" alt="" />
+            </div>
+            <div class="left_header-band">
+              <h3>TRO</h3>
+              <h5>STUDIO</h5>
+            </div>
           </div>
-          <div class="left_header-band">
-            <h3>TRO</h3>
-            <h5>STUDIO</h5>
+          <div class="right_header col-md-6">
+            <div class="right_header-menu">
+              <ul class="menu_ul">
+                <li class="menu_li"><a class="menu-link" href="">HOME</a></li>
+                <li class="menu_li"><a class="menu-link" href="">TEAM</a></li>
+                <li class="menu_li"><a class="menu-link" href="">ABOUT<i class="fas fa-angle-down"></i></a>
+                  <ul class="hidden_menu">
+                    <li><a class="dropdown-item" href="#"> LIVE SESSION</a></li>
+                    <li><a class="dropdown-item" href="#"> SHOW AND ALBUM </a></li>
+                    <li><a class="dropdown-item" href="#"> SOMETHING ELSE</a></li>
+                  </ul>
+                </li>
+                <li class="menu_li"><a class="menu-link" href="">GALLERY</a></li>
+                <li class="menu_li"><a class="menu-link" href="">CONTACT</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="right_header col-md-6">
-          <div class="right_header-menu">
-            <ul class="menu_ul">
-              <li class="menu_li"><a class="menu-link" href="">HOME</a></li>
-              <li class="menu_li"><a class="menu-link" href="">TEAM</a></li>
-              <li class="menu_li"><a class="menu-link" href="">ABOUT<i class="fas fa-angle-down"></i></a>
-                <ul class="hidden_menu">
-                  <li><a class="dropdown-item" href="#"> LIVE SESSION</a></li>
-                  <li><a class="dropdown-item" href="#"> SHOW AND ALBUM </a></li>
-                  <li><a class="dropdown-item" href="#"> SOMETHING ELSE</a></li>
-                </ul>
-              </li>
-              <li class="menu_li"><a class="menu-link" href="">GALLERY</a></li>
-              <li class="menu_li"><a class="menu-link" href="">CONTACT</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
         <div id="content_slides" class="content__header col-md-12">
           <div class="content__slider">
             <div class="content__header-title">
@@ -434,29 +434,24 @@
   </div>
 </body>
 <script src="js/slick-slider.js"></script>
-
-
 <script>
-  // background-img slider
-  $("#slideshow > li:gt(0)").hide();
-  $("#content_slides > .content__slider:gt(0)").hide();
-  setInterval(function () {
-    $('#slideshow > li:first')
-      .hide()
-      .next()
-      .fadeIn()
-      .end()
-      .appendTo('#slideshow');
-    $('#content_slides > .content__slider:first')
-      .hide()
-      .next()
-      .delay(500)
-      .fadeIn('slow')
-      .end()
-      .appendTo('#content_slides');
-  }, 8000);
-
-  
+// header slider
+$("#slideshow > li:gt(0)").hide();
+$("#content_slides > .content__slider:gt(0)").hide();
+setInterval(function () {
+  $('#slideshow > li:first')
+    .hide()
+    .next()
+    .fadeIn()
+    .end()
+    .appendTo('#slideshow');
+  $('#content_slides > .content__slider:first')
+    .hide()
+    .next()
+    .delay(500)
+    .fadeIn('slow')
+    .end()
+    .appendTo('#content_slides');
+}, 8000);
 </script>
-
 </html>
