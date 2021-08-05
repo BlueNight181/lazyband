@@ -47,15 +47,15 @@ a {
 }
 
 .scrolling-active{
-  background-color: black;
-  box-shadow:  0 3px 1rem rgba(0, 0, 0,.1);
+  background-color: rgb(2, 2, 2);
+  box-shadow:  0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 
 #blue {
   color: rgb(88, 88, 235);
 }
 #night {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 187, 0);
   transition: 1s;
 }
 #night:hover {
