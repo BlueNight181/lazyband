@@ -11,34 +11,27 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- slick slider -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="font/Harley Style Brush.otf" rel="stylesheet">
-  <link rel="stylesheet" href="font/Harley Swash.otf" rel="stylesheet">
-
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/7061c063c6.js" crossorigin="anonymous"></script>
-
   <!-- getbootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
   <!-- boostrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="style.css" />
-
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- scrip -->
   <script src="js/scrip.js"></script>
 </head>
@@ -61,10 +54,10 @@
         <div id="navbar" class="header_layout row">
           <div class="left_header col-md-4">
             <div class="left_header-logo">
-              <img src="images/LOGO (black bg) (1).jpg" alt="" />
+              <a href="/"><img src="images/LOGO (black bg) (1).jpg" alt="" /></a>
             </div>
             <div class="left_header-band">
-              <h3>TRO</h3>
+              <a href="/"><h3>TRO</h3></a>
               <h5>STUDIO</h5>
             </div>
           </div>
@@ -72,7 +65,17 @@
             <div class="right_header-menu">
               <ul class="menu_ul">
                 <li class="menu_li"><a class="menu-link" href="">HOME</a></li>
-                <li class="menu_li"><a class="menu-link" href="">TEAM</a></li>
+                <li class="menu_li"><a class="menu-link" href="">SERVICES<i class="fas fa-angle-down"></i></a>
+                  <ul class="hidden_menu">
+                    <li><a class="dropdown-item" href="#">Recording</a></li>
+                    <li><a class="dropdown-item" href="#">Mixing</a></li>
+                    <li><a class="dropdown-item" href="#">Stem Mastering</a></li>
+                    <li><a class="dropdown-item" href="#">Mastering</a></li>
+                    <li><a class="dropdown-item" href="#">Arranging</a></li>
+                    <li><a class="dropdown-item" href="#">Music Commercial</a></li>
+                    <li><a class="dropdown-item" href="#">Music Distribution</a></li>
+                  </ul>
+                </li>
                 <li class="menu_li"><a class="menu-link" href="">ABOUT<i class="fas fa-angle-down"></i></a>
                   <ul class="hidden_menu">
                     <li><a class="dropdown-item" href="#"> LIVE SESSION</a></li>
@@ -99,7 +102,7 @@
           <div class="content__slider">
             <div class="content__header-title">
               <h1 style=" letter-spacing: 15px;">LIMITLESS</h1>
-              <h4 >New Album is available</h4>
+              <h4>New Album is available</h4>
             </div>
             <div class="content__header-btn">
               <button class="btn"><i onclick="ScrollDown()" class="far fa-play-circle"></i></button>
@@ -110,11 +113,11 @@
     </section>
     <section class="main title">
       <div class="about row">
-        <div class="about__left col-md-5">
-          <img src="images/Tro.jpg" alt="">
+        <!-- <div class="about__left col-md-5">
+          <img src="images/fr.png" alt="">
           <h1></h1>
-        </div>
-        <div class="about__right col-md-5">
+        </div> -->
+        <div class="about__right col-md-10">
           <div class="main__content-title" id="about">
             <h1>INTRODUCE</h1>
           </div>
@@ -151,41 +154,32 @@
           <div class="carousel-item active">
             <img src="images/album.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>PROMOTION</h5>
-              <p>Some representative placeholder content for the first slide.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque eaque ut consequuntur sunt quos
-                fugit mollitia iure excepturi aliquid! Animi culpa, dolore labore eos deleniti architecto. Autem, et
-                veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima necessitatibus modi aperiam
-                alias unde a nisi, ipsum eius quisquam dolorum odit aliquid sit ipsa similique praesentium hic animi
-                corporis nesciunt?
+              <h1>SERVICES</h1>
+              <h5>RECORDING</h5>
+              <p>Với trang thiết bị hiện đại, kĩ sư âm thanh có kinh nghiệm nhiều năm làm việc tại các Studio lớn nhỏ, không chỉ dừng lại ở việc thu âm các bài hát với chất lượng chuyên nghiệp Trọ còn quan tâm đến tâm lý và sở thích của khách hàng khi đến thu âm tại Trọ Studio. Đối với các bạn lần đầu tiên hoặc ít có cơ hội làm việc tại Studio chuyên nghiệp sẽ được Trọ chia sẻ các mẹo và kiến thức cơ bản khi thu âm và làm việc tại studio để tiến trình thu âm sẽ dễ dàng và chuyên nghiệp hơn.
               </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/4.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>MIXING</h5>
-              <p>Some representative placeholder content for the first slide.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque eaque ut consequuntur sunt quos
-                fugit mollitia iure excepturi aliquid! Animi culpa, dolore labore eos deleniti architecto. Autem, et
-                veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima necessitatibus modi aperiam
-                alias unde a nisi, ipsum eius quisquam dolorum odit aliquid sit ipsa similique praesentium hic animi
-                corporis nesciunt?</p>
+              <button class="btn btn-danger">Read more</button>
             </div>
           </div>
           <div class="carousel-item ">
-            <img src="images/11.jpg" class="d-block w-100" alt="...">
+            <img src="images/album.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>PRODUCTION</h5>
-              <p>Some representative placeholder content for the first slide.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque eaque ut consequuntur sunt quos
-                fugit mollitia iure excepturi aliquid! Animi culpa, dolore labore eos deleniti architecto. Autem, et
-                veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima necessitatibus modi aperiam
-                alias unde a nisi, ipsum eius quisquam dolorum odit aliquid sit ipsa similique praesentium hic animi
-                corporis nesciunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vel qui? Architecto
-                sit rerum ipsa alias? Mollitia dolorem, quam nulla sint aliquid vero, architecto autem, inventore id
-                quisquam magni nobis!
+              <h1>SERVICES</h1>
+              <h5>MIXING/MASTERING</h5>
+              <p>Ngoài việc bạn sở hữu một ca khúc hay, sản phẩm đầu cuối luôn là vấn đề quan trọng của một sản phẩm âm nhạc được up load trên các nền tảng Stream nhạc hiện nay. Nếu một bài hát được hoàn thiện rất tốt ở các khâu như viết nhạc, phối khi, thu âm nhưng Mixing/Mastering không đạt chất lượng cao thì thật là đáng tiếc. Để một ca khúc đến với tai người nghe thì phải trải qua rất nhiều công đoạn hậu kì phức tạp, đòi hỏi kĩ thuật và kinh nghiệm cao, để làm hài lòng hầu hết khách hàng Trọ sẽ xử lý bản mix theo đúng chất âm của từng thể loại nhạc mà các bạn mong muốn.
               </p>
+              <button class="btn btn-danger">Read more</button>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="images/album.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>SERVICES</h1>
+              <h5>PRODUCING</h5>
+              <p>Hòa âm phối khí ca khúc từ đơn gian đến phức tạp. khi nhận sản xuất một ca khúc original Trọ sẽ bám sát project từ khâu demo cho đến lựa chọn thể loại và nhu cầu phạm vi sử dụng beat ( beat để live performance ) để đạt được tối ưu chất lượng sản phẩm đầu ra cho khách hàng
+                Ngoài sản xuất cho những sản phẩm cá nhân chuyên nghiệp, Trọ còn có các gói sản xuất nhạc cho TVC/Branding, Youtube music, tik tok, remix, cover,.v.v
+              </p>
+              <button class="btn btn-danger">Read more</button>
             </div>
           </div>
         </div>
@@ -270,6 +264,10 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="main social">
+      <div class="switch">
       </div>
     </section>
     <section class="main team">
@@ -435,23 +433,24 @@
 </body>
 <script src="js/slick-slider.js"></script>
 <script>
-// header slider
-$("#slideshow > li:gt(0)").hide();
-$("#content_slides > .content__slider:gt(0)").hide();
-setInterval(function () {
-  $('#slideshow > li:first')
-    .hide()
-    .next()
-    .fadeIn()
-    .end()
-    .appendTo('#slideshow');
-  $('#content_slides > .content__slider:first')
-    .hide()
-    .next()
-    .delay(500)
-    .fadeIn('slow')
-    .end()
-    .appendTo('#content_slides');
-}, 8000);
+  // header slider
+  $("#slideshow > li:gt(0)").hide();
+  $("#content_slides > .content__slider:gt(0)").hide();
+  setInterval(function () {
+    $('#slideshow > li:first')
+      .hide()
+      .next()
+      .fadeIn()
+      .end()
+      .appendTo('#slideshow');
+    $('#content_slides > .content__slider:first')
+      .hide()
+      .next()
+      .delay(500)
+      .fadeIn('slow')
+      .end()
+      .appendTo('#content_slides');
+  }, 8000);
 </script>
+
 </html>
