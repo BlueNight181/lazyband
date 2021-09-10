@@ -167,7 +167,7 @@ a {
   border-radius: 5px;
   background-color: rgb(243, 242, 242);
   position: absolute;
-  margin: 15px 0 0 20px;
+  margin: 20px 0 0 20px;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in;
@@ -263,11 +263,13 @@ button:focus {
   position: relative;
 }
 .title .background-title{
-  opacity: 0.1;
+  max-height:1000px;
+  opacity: 0.12;
   right: 0;
   position: absolute;
-  right: -100px;
-  width: 90%;
+  /* right: -100px; */
+
+  width: 90vw;
 }
 
 .main__content {
@@ -324,8 +326,8 @@ button:focus {
 
 .colum__block-left .left__title h2 {
   margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 3px;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 5px;
   /* line-height: 120px; */
   font-size:40px;
 }
@@ -347,12 +349,14 @@ button:focus {
 }
 
 .content__title {
-  padding: 160px 0;
+  padding: 140px 0;
   text-align: center;
   position: relative;
 }
 
 .content__title h1 {
+  padding-top: 20px;
+  /* padding-bottom: 10px; */
   font-family: "Zen Tokyo Zoo", cursive;
   font-size: 60px;
   position: absolute;
@@ -475,6 +479,10 @@ button:focus {
 .member__content {
   margin: 0 auto;
   /* padding-bottom: 100px; */
+}
+
+.member__content iframe{
+  margin: 15px 0;
 }
 
 .member__content-artist {
@@ -725,8 +733,7 @@ button:focus {
 .line{
   padding-bottom: 40px;
   margin: 0 auto;
-  width:35%;
-  border-radius:10px;
+  width:28%;
 }
 .line img {
   height: 40px;

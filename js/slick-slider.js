@@ -4,3 +4,6 @@ $('.object__logo-content').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+// $('.carousel').carousel({
+//   interval: false,
+// });
