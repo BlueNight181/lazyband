@@ -596,6 +596,12 @@ button:focus {
   margin-bottom: 15px;
 }
 
+.mapper{
+  margin-top: 25px;
+}
+.modal-content{
+  margin-top:130px;
+}
 .menu__footer-ul {
   display: flex;
   justify-content: center;
