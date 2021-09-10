@@ -422,7 +422,7 @@ button:focus {
 
 /* slick */
 .switch{
-  background-image: url(../images/night.jpg); 
+  background-image: url(images/night.jpg); 
   background-size: cover;
   height: 110px;
   background-attachment: fixed;
