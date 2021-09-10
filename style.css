@@ -259,50 +259,79 @@ button:focus {
 
 /* -------------------------------main----------------------------- */
 
+.title{
+  position: relative;
+}
+.title .background-title{
+  opacity: 0.1;
+  right: 0;
+  position: absolute;
+  right: -100px;
+  width: 90%;
+}
+
 .main__content {
   position: relative;
+  padding: 70px 0;
 }
 
 .main__content-title {
+  /* height: 0; */
+  padding-bottom: 70px !important;
   width: 100%;
   text-align: center;
-  padding: 80px 0;
+  padding: 0 ;
+  display: flex;
+  justify-content: center;
 }
 
 .main__content-title h1 {
+  font-family: "Zen Tokyo Zoo", cursive;
   color: #333333;
-  letter-spacing: 7px;
-  transition: 1s;
+  font-size: 60px;
+  transition: 0.3s;
   cursor: pointer;
 }
 
 .main__content-title h1:hover {
-  color: #000000;
+  color: #9c6767;
+  transition: 0.3s;
+}
+
+.main__content-title h4 {
+  margin: auto 10px;
+  color: #9c6767;
+
+  font-size:30px;
   transition: 1s;
+  cursor: pointer;
+}
+
+.main__content-title h4:hover {
+  color: #9c6767;
+  transition: 0.3s;
 }
 
 .colum__block {
   justify-content: center;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 50px 0;
   position: relative;
 }
 
-.colum__block-left {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(0 , 25%); */
+.colum__block-left, .colum__block-right{
+  padding: 10px 20px;
 }
 
-.colum__block-left .left__title {
+.colum__block-left .left__title h2 {
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   /* line-height: 120px; */
+  font-size:40px;
 }
 
 .colum__block-left .left__content {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 30px;
 }
 
@@ -313,6 +342,8 @@ button:focus {
 .colum__block-right .colum-img {
   width: 100%;
   max-width: auto;
+  min-height: 350px;
+  border-radius:4px;
 }
 
 .content__title {
@@ -322,6 +353,8 @@ button:focus {
 }
 
 .content__title h1 {
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 60px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -524,6 +557,17 @@ button:focus {
   padding: 60px 0 40px;
 }
 
+.footer__content-menu{
+  margin-bottom: 40px;
+}
+
+.footer__content-menu h3 {
+  color: #e7e7ee;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
 .menu__footer-ul {
   display: flex;
   justify-content: center;
@@ -553,13 +597,14 @@ button:focus {
 }
 
 .footer__conntent-social {
+  margin-bottom: 15px;
   display: flex;
   justify-content: center;
 }
 .footer__conntent-link {
   color: white;
   margin: 0 12px;
-  font-size: 19px;
+  font-size: 25px;
   transition: 0.5s;
 }
 
@@ -602,25 +647,29 @@ button:focus {
 }
 
 /* slider */
+.carousel-inner{
+  padding-bottom: 15px;
+}
 
 .carousel-inner .carousel-item{
   max-height: 671px;
 }
 
 .carousel-caption{
-  margin-bottom: 170px;
+  display: flex;
+  margin-bottom: 225px;
   max-height: 200px;
   padding: 0;
 }
 
 .carousel-caption h1{
-  font-family: 'Staatliches', cursive;
-  font-size: 45px;
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 50px;
   font-weight: 500;
-  letter-spacing: 9px;
+  letter-spacing: 11px;
   position: absolute;
   color: #dc3545;
-  top: -205px;
+  top: -135px;
   left: 50%;
   transform: translate(-49%, 0);
   transition: 0.4s;
@@ -635,9 +684,11 @@ button:focus {
   font-family: 'Staatliches', cursive;
   font-size: 26px;
   letter-spacing: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 27px;
 }
-
+.carousel-caption p {
+  font-size: 18px;
+}
 .carousel-caption button{
   margin-top: 50px;
 }
@@ -645,9 +696,10 @@ button:focus {
 
 .about{
   justify-content: center;
-  background: white;
-  padding: 59px 0;
+  /* background: white; */
+  padding: 80px 0 60px;
   height: 670px;
+  margin: 0 160px;
 }
 
 .about__left, .about__right{
@@ -662,22 +714,34 @@ button:focus {
 
 .about__right{
   font-family: 'Staatliches', cursive;
+  justify-content: center;
+  position: absolute;
 }
 
 .about__right #about{
  color: #333333;
 }
 
-.about__right .main__content-title{
-  padding: 0 0 20px 0;
+.line{
+  padding-bottom: 40px;
+  margin: 0 auto;
+  width:35%;
+  border-radius:10px;
 }
-
-.status{
+.line img {
+  height: 40px;
+}
+.status-object{
+  justify-content: center;
+  
 }
 
 .status h3{
-  font-size: 24px;
-  margin-bottom: 14px;
+  font-size: 22px;
+  color: rgb(5, 5, 5);
+  margin: 0 10px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* scroll */
