@@ -26,7 +26,7 @@ li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .univer{
@@ -275,6 +275,11 @@ button:focus {
 .main__content {
   position: relative;
   padding: 70px 0;
+}
+
+.main__content .avatar {
+  position: absolute;
+  object-fit: contain;
 }
 
 .main__content-title {
