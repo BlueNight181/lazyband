@@ -268,7 +268,7 @@ button:focus {
   right: 0;
   position: absolute;
   /* right: -100px; */
-
+  top: -89%;
   width: 90vw;
 }
 
@@ -336,13 +336,14 @@ button:focus {
   z-index: -1;
 }
 .colum__block #back_img_2{
-  left:67%;
+  /* left:67%; */
   top: 35px;
 }
 
 .colum__block #back_img_3{
   left:-1%;
   opacity: 0.18;
+  top: 35px;
 }
 
 .colum__block-left, .colum__block-right{
