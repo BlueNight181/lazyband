@@ -591,7 +591,6 @@ button:focus {
 }
 
 .footer__content-menu{
-  margin-bottom: 40px;
 }
 
 .footer__content-menu h3 {
@@ -602,11 +601,13 @@ button:focus {
 }
 
 .mapper{
-  margin-top: 25px;
+  margin: 5px 0 25px;
 }
+
 .modal-content{
-  margin-top:130px;
+  margin-top:152px;
 }
+
 .menu__footer-ul {
   display: flex;
   justify-content: center;
