@@ -655,7 +655,7 @@ button:focus {
     padding-bottom: 60px;
   }
   .modal-content{
-    margin-top: 81px !important;
+    margin-top: 88px !important;
   }
   .navbar-dark .navbar-nav .nav-link{
     float: right !important;
@@ -748,8 +748,6 @@ button:focus {
   padding: 60px 0 40px;
 }
 
-.footer__content-menu{
-}
 
 .footer__content-menu h3 {
   color: #e7e7ee;
