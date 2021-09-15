@@ -39,7 +39,7 @@ a {
   height: 100vh;
 }
 
-#navbar{
+#web-navbar{
   padding: 0;
   height: 86px;
   /* background: black; */
@@ -124,6 +124,7 @@ a {
 }
 
 .right_header {
+  white-space: nowrap;
   margin: auto 0;
 }
 
@@ -272,6 +273,10 @@ button:focus {
   width: 90vw;
 }
 
+.ytp-cued-thumbnail-overlay-image{
+  border-radius:12px;
+}
+
 .main__content {
   position: relative;
   padding: 70px 0;
@@ -284,7 +289,7 @@ button:focus {
 
 .main__content-title {
   /* height: 0; */
-  padding-bottom: 70px !important;
+  padding-bottom: 80px !important;
   width: 100%;
   text-align: center;
   padding: 0 ;
@@ -402,6 +407,7 @@ button:focus {
 /* img */
 
 .galery {
+  /* margin-bottom: 58px; */
   background: #13181d;
 }
 
@@ -584,7 +590,158 @@ button:focus {
 }
 
 /* footer */
+/* navfoot */
 
+
+.navFooter{
+  height:70px;
+  background:#e0e0e0;
+}
+.navFooter {
+  text-align: center;
+  display: none;
+}
+
+.nav-service{
+  display: none;
+}
+
+.nav_active{
+  font-size: 37px;
+  margin: auto !important;
+  color: rgb(22, 22, 22);
+  line-height: 1.9;
+}
+.object .music{
+  line-height:2.2;
+  font-size: 30px;
+}
+
+/* nav-navbar */
+#nav-navbar{
+  display: none;
+}
+.bg-dark{
+  background-color:black !important;
+}
+
+.hidden-content{
+  display: flex; 
+  float: right;
+  margin-right: 0px;
+}
+
+.hidden-content i{
+  margin: auto 0;
+  font-size:14px;
+  color: rgba(255, 174, 174, 0.55);
+}
+
+#nav-clicker{
+  padding-right: 0 !important;
+  padding-left: 9px !important;
+ border: none;
+ outline: none;
+ font-size:16px;
+}
+
+#hidden-navbar .nav-link{
+  padding-right: 12px;
+}
+
+
+@media only screen and (max-width:767px) {
+  .main__content-title{
+    padding-bottom: 60px;
+  }
+  .modal-content{
+    margin-top: 81px !important;
+  }
+  .navbar-dark .navbar-nav .nav-link{
+    float: right !important;
+    text-align: right;
+  }
+  #nav-navbar{
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding-right: 22px !important;
+  }
+  #web-navbar{
+    display: none !important; 
+  }
+  .header_layout{
+    padding-top: 0 !important;
+  }
+  .univer{
+    margin: 0 !important;
+  }
+  .footer__content{
+    padding: 30px 0 77px !important;
+  }
+  .galery{
+    margin-bottom: 0 !important;
+  }
+  .web-service{
+    display: none !important;
+  }
+  .nav-service{
+    display: block !important;
+  }
+  .line{
+    padding-bottom: 50px !important;
+    width:80% !important;
+  }
+  .main__content{
+    padding-top: 0 !important;
+  }
+  .status:last-child  {
+    margin-top: 27px !important;
+  }
+  .about{
+    margin: 0 !important;
+    padding-bottom: 78px !important;
+  }
+  .left__content .colum_img{
+    display:none !important;
+  }
+  .content__header-title h1 h4 {
+    font-size:2vw;
+  }
+  .member__content iframe {
+    margin: auto !important;
+    margin-bottom: 20px !important;
+  }
+  .delete_video{
+    display: none !important;
+  }
+  .delete_video:last-child{
+    margin-bottom: 0 !important;
+  }
+  #ballon{
+    display: none !important;
+  }
+  #galery_btn {
+    margin: 25px !important;
+  }
+  .endImg{
+    display:none;
+  }
+  /* .footer__content{
+    display:none;
+  } */
+  .navFooter{
+    display: flex;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+    background: #e0e0e0;
+  }
+}
+/* end navfoot */
 .footer__content {
   background-color: black;
   text-align: center;
@@ -739,8 +896,8 @@ button:focus {
   justify-content: center;
   /* background: white; */
   padding: 80px 0 60px;
-  height: 540px;
-  margin: 0 160px;
+  /* height: 540px; */
+  /* margin: 0 160px; */
 }
 
 .about__left, .about__right{
@@ -756,7 +913,7 @@ button:focus {
 .about__right{
   font-family: 'Staatliches', cursive;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .about__right #about{
@@ -764,7 +921,7 @@ button:focus {
 }
 
 .line{
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   margin: 0 auto;
   width:50%;
 }
