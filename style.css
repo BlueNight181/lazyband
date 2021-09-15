@@ -687,7 +687,7 @@ button:focus {
     font-size:50px;
   }
   .main__content-title{
-    padding-bottom: 60px;
+    padding: 60px 0 !important;
   }
   .modal-content{
     margin-top: 88px !important;
@@ -729,6 +729,7 @@ button:focus {
   .line{
     padding-bottom: 50px !important;
     width:80% !important;
+    display: none !important;
   }
   .main__content{
     padding-top: 0 !important;
