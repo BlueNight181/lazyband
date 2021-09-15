@@ -674,6 +674,8 @@ button:focus {
     top: 0;
     z-index: 999;
     padding-right: 22px !important;
+    padding-bottom: 12px !important;
+
   }
   #web-navbar{
     display: none !important; 
