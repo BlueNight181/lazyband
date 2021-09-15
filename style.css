@@ -672,6 +672,11 @@ button:focus {
   padding-right: 12px;
 }
 
+@media only screen and (max-width:1280px) {
+  .background-title{
+    display: none !important;
+  }
+}
 
 @media only screen and (max-width:767px) {
   .card-gallery .popup-image .animated{
