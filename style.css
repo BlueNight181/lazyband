@@ -535,6 +535,12 @@ button:focus {
   padding-bottom: 58px;
 }
 
+#web-navbar{
+  position: fixed;
+  top: 0;
+  background-color: black;
+}
+
 .member__content {
   margin: 0 auto;
   /* padding-bottom: 100px; */
