@@ -688,6 +688,9 @@ button:focus {
 }
 
 @media only screen and (max-width: 767px) {
+  .mfp-content{
+    margin-top: 0 !important;
+  }
   .card-gallery .popup-image .animated {
     filter: none;
     -webkit-filter: unset;
@@ -787,11 +790,30 @@ button:focus {
     background: #e0e0e0;
   }
 }
+
+@media only screen and (max-width:375px ){
+  .main__content-title h1{
+    font-size: 45px;
+  }
+  .content__title {
+    padding-top: 35px;
+  }
+  .content__title h1 {
+    padding-top: 0;
+    font-size: 45px;
+  }
+  .about{
+    padding-top: 0 !important;
+  }
+  .status{
+    padding: 0;
+  }
+}
 /* end navfoot */
 .footer__content {
   background-color: black;
   text-align: center;
-  padding: 60px 0 40px;
+  padding: 52px 0 22px;
 }
 
 .footer__content-menu h3 {
