@@ -1,0 +1,1067 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul,
+  li,
+  a {
+    margin: 0;
+    padding: 0;
+  }
+  .row > a {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  .univer {
+    margin-top: -60px;
+    position: relative;
+  }
+  
+  .header {
+    position: relative;
+    height: 12vh;
+  }
+
+  .header__slide{
+      height: 100%;
+  }
+  
+.slides{
+    height: 100%;
+}
+
+.slides .header-img  {
+    height: 100%;
+}
+
+  #web-navbar {
+    padding: 0;
+    height: 86px;
+    /* background: black; */
+    z-index: 9999;
+  }
+  
+  .scrolling-active {
+    background-color: rgb(2, 2, 2);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  #blue {
+    color: rgb(88, 88, 235);
+  }
+  #night {
+    color: rgb(255, 187, 0);
+    transition: 1s;
+  }
+  #night:hover {
+    color: brown;
+    transition: 1s;
+  }
+  
+  .zoom {
+    animation: zoom 15s ease 0s normal both infinite !important;
+    -webkit-animation: zoom 15s ease 0s normal both infinite;
+    -moz-animation: zoom 15s ease 0s normal both infinite;
+    -ms-animation: zoom 15s ease 0s normal both infinite;
+    -o-animation: zoom 15s ease 0s normal both infinite;
+  }
+  
+  @keyframes zoom {
+    0% {
+      background-size: 100% 100%;
+    }
+    100% {
+      background-size: 110% 110%;
+    }
+  }
+  
+  .header_layout {
+    justify-content: center;
+    margin: 0;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #content_slides{
+      height: 100%;
+  }
+  
+  .left_header {
+    display: flex;
+    z-index: 1;
+  }
+  
+  .left_header-logo {
+    margin: auto 0;
+  }
+  
+  .left_header-logo img {
+    width: 77%;
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  
+  .left_header-band {
+    margin: auto 0;
+  }
+  
+  .left_header-band a h3 {
+    color: aliceblue;
+    align-self: center;
+    margin-bottom: 5px;
+    font-size: 28px;
+    font-family: "Zen Tokyo Zoo", cursive;
+  }
+  
+  .left_header-band h5 {
+    font-size: 12px;
+    letter-spacing: 10px;
+    color: rgb(97, 3, 3);
+    font-weight: 700;
+  }
+  
+  .right_header {
+    white-space: nowrap;
+    margin: auto 0;
+  }
+  
+  .right_header .right_header-menu .menu_ul {
+    display: flex;
+    float: right;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .right_header .right_header-menu .menu_ul li .menu-link {
+    margin-left: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+  }
+  
+  .menu-link i {
+    margin-left: 5px;
+  }
+  
+  .right_header .right_header-menu .menu_ul .menu-link:hover {
+    transition: 0.2s;
+    color: rgb(245, 80, 80);
+  }
+  
+  .menu_ul .menu_li {
+    position: relative;
+    padding-bottom: 20px;
+  }
+  
+  .dropdown-item {
+    padding: 15px 70px 15px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  
+  .right_header-menu .menu_ul .hidden_menu {
+    border-radius: 5px;
+    background-color: rgb(243, 242, 242);
+    position: absolute;
+    margin: 26px 0 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.3s ease-in;
+    transition: max-height 0.3s ease-in;
+    z-index: 3;
+  }
+  
+  .right_header-menu .menu_ul .menu_li:hover > .hidden_menu {
+    max-height: 500px;
+  }
+  
+  .hidden_menu .dropdown-item:hover {
+    transition: 0.3s;
+    color: rgb(137, 153, 243);
+    background-color: whitesmoke;
+    font-weight: 500;
+  }
+  
+  .object:hover {
+    transition: 2s;
+  }
+  
+  .content__header {
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    height: 555px;
+  }
+  
+  .content__slider {
+    width: 100%;
+    margin-top: 100px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  }
+  
+  .header-img {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .content__header-title h1 {
+    font-family: "Zen Tokyo Zoo", cursive;
+    font-size: 60px;
+    color: rgb(209, 64, 64);
+    letter-spacing: 11px;
+  }
+  .content__header-title h4 {
+    margin: 7px 0 15px 0;
+    color: rgb(255, 255, 255);
+    font-family: "Staatliches", cursive;
+    letter-spacing: 2px;
+  }
+  
+  button:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  .content__header-btn i {
+    font-size: 80px;
+    transition: 0.3s;
+    color: rgb(211, 207, 207);
+    cursor: pointer;
+  }
+  
+  .content__header-btn i:hover {
+    color: rgb(245, 80, 80);
+    transition: 0.3s;
+    transform: scale(0.9);
+  }
+  
+  .info__btn {
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 0.8s;
+  }
+  .info__btn:hover {
+    color: rgb(245, 80, 80);
+    background-color: black;
+    transform: scale(0.9);
+    transition: 0.4s;
+  }
+  
+  /* -------------------------------main----------------------------- */
+  
+  .title {
+    position: relative;
+  }
+  .title .background-title {
+    max-height: 1000px;
+    opacity: 0.12;
+    right: -10%;
+    position: absolute;
+    top: -81%;
+    width: 80vw;
+    z-index: 10;
+  }
+  
+  .ytp-cued-thumbnail-overlay-image {
+    border-radius: 12px;
+  }
+  
+  .banner {
+    color: white !important;
+  }
+  
+  .main__content {
+    position: relative;
+    padding: 70px 0;
+  }
+  
+  .main__content::before {
+    content: "";
+    background: linear-gradient(
+        rgba(24, 24, 24, 0.753) 100%,
+        rgba(29, 29, 29, 0.76) 100%
+      ),
+      url(images/AVATAR.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* opacity: 0.5; */
+  }
+  
+  .main__content .avatar {
+    position: absolute;
+    object-fit: contain;
+  }
+  
+  .main__content-title {
+    /* height: 0; */
+    padding-bottom: 80px !important;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main__content-title h1 {
+    font-family: "Zen Tokyo Zoo", cursive;
+    color: #333333;
+    font-size: 60px;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .main__content-title h1:hover {
+    color: #9c6767;
+    transition: 0.3s;
+  }
+  
+  .main__content-title h4 {
+    margin: auto 10px;
+    color: #9c6767;
+  
+    font-size: 30px;
+    transition: 1s;
+    cursor: pointer;
+  }
+  
+  .main__content-title h4:hover {
+    color: #9c6767;
+    transition: 0.3s;
+  }
+  
+  .colum__block {
+    justify-content: center;
+    margin: 10px 0 50px 0;
+    position: relative;
+  }
+  
+  .colum__block .colum_img {
+    position: absolute;
+    object-fit: cover;
+    width: 500px;
+    height: 600px;
+    left: 30px;
+    /* top: 0; */
+    opacity: 0.4;
+    z-index: -1;
+  }
+  .colum__block #back_img_2 {
+    /* left:67%; */
+    top: 35px;
+  }
+  
+  .colum__block #back_img_3 {
+    left: -1%;
+    opacity: 0.18;
+    top: 35px;
+  }
+  
+  .colum__block-left,
+  .colum__block-right {
+    padding: 10px 20px;
+  }
+  
+  .colum__block-left .left__title h2 {
+    margin-bottom: 10px;
+    font-family: "Staatliches", cursive;
+    letter-spacing: 5px;
+    /* line-height: 120px; */
+    font-size: 40px;
+    color: white;
+  }
+  
+  .colum__block-left .left__content {
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+  
+  .left__content p {
+    color: #e0e0e0 !important;
+  }
+  
+  .colum__block-left .read_more {
+    margin-top: 20px;
+  }
+  
+  .colum__block-right .colum-img {
+    width: 100%;
+    max-width: auto;
+    min-height: 350px;
+    border-radius: 4px;
+  }
+  
+  .content__title {
+    padding: 140px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .content__title h1 {
+    padding-top: 20px;
+    /* padding-bottom: 10px; */
+    font-family: "Zen Tokyo Zoo", cursive;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(185, 185, 185);
+    letter-spacing: 7px;
+    transition: 1s;
+  }
+  .content__title h1:hover {
+    color: rgb(255, 247, 236);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  /* img */
+  
+  .galery {
+    /* margin-bottom: 58px; */
+    background: #13181d;
+  }
+  
+  .justify__content-center .row {
+    margin: 0 auto;
+  }
+  
+  .popup-image {
+    padding: 5px !important;
+    width: 100%;
+    display: inline block;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .card-gallery .popup-image .animated {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 0.7s ease;
+  }
+  .card-gallery .popup-image .animated:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 0.7s ease;
+  }
+  
+  #galery_btn {
+    margin: 40px 0 45px;
+    background-color: black;
+    outline: none;
+    border: none;
+    color: rgb(164, 164, 165);
+    font-weight: 500;
+  
+    padding: 12px;
+  }
+  #galery_btn:hover {
+    color: white;
+  }
+  
+  /* slick */
+  .switch {
+    background-image: url(images/night.jpg);
+    background-size: cover;
+    height: 110px;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #e7e7ee;
+  }
+  
+  .object__logo {
+    background-color: #e7e7ee;
+    background-image: linear-gradient(rgb(253, 233, 189), rgb(173, 144, 241));
+    padding: 30px 0;
+  }
+  .content__social .content__social-link {
+    margin: 0 auto;
+  }
+  
+  .slick-active,
+  .slick-cloned {
+    text-align: center;
+  }
+  
+  .slick-active .link__social {
+    font-size: 50px !important;
+    color: #13181d;
+    transition: 0.7s;
+  }
+  
+  .slick-cloned .link__social {
+    font-size: 50px !important;
+    color: #13181d;
+    /* transition: 0.7s; */
+  }
+  
+  .slick-active .link__social:hover {
+    color: #202046;
+    transition: 0.5s;
+  }
+  
+  .object__logo button {
+    display: none !important;
+  }
+  
+  /* Member */
+  
+  .member {
+    background: #13181d;
+    text-align: center;
+    padding-bottom: 58px;
+  }
+  
+  #web-navbar{
+    position: fixed;
+    top: 0;
+    background-color: black;
+  }
+  
+  .member__content {
+    margin: 0 auto;
+    /* padding-bottom: 100px; */
+  }
+  
+  .member__content iframe {
+    margin: 15px 0;
+  }
+  
+  .member__content-artist {
+    position: relative;
+    padding: 0 10px 30px;
+  }
+  
+  .artist__status {
+    color: #e7e7ee00;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 10px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .member__content-artist:hover > .artist__status {
+    transition: all 0.44s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translate(-50%, -150%);
+    color: #e7e7ee;
+  }
+  
+  .member__content-artist:hover {
+    z-index: 999;
+  }
+  
+  .artist__status-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .artist__status-option {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  
+  .artist__img {
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  
+  .artist__img-img {
+    width: 100%;
+    height: 400px;
+    transition: 0.5s;
+  }
+  
+  .artist__img:hover > .artist__img-img {
+    transition: all 0.44s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateY(0) scale(1.05) !important;
+    opacity: 0.5;
+    background-image: linear-gradient(
+      rgb(253, 253, 253),
+      rgb(0, 0, 0)
+    ) !important;
+  }
+  
+  #member_btn {
+    margin: 25px 0 25px;
+    background-color: black;
+    outline: none;
+    border: none;
+    color: rgb(164, 164, 165);
+    font-weight: 500;
+  
+    padding: 12px;
+  }
+  #member_btn:hover {
+    color: white;
+  }
+  
+  /* footer */
+  /* navfoot */
+  
+  .navFooter {
+    height: 70px;
+    background: #e0e0e0;
+  }
+  .navFooter {
+    text-align: center;
+    display: none;
+  }
+  
+  .nav-service {
+    display: none;
+  }
+  
+  .nav_active {
+    font-size: 37px;
+    margin: auto !important;
+    color: rgb(22, 22, 22);
+    line-height: 1.9;
+  }
+  .object .music {
+    line-height: 2.2;
+    font-size: 30px;
+  }
+  
+  /* nav-navbar */
+  #nav-navbar {
+    display: none;
+  }
+  .bg-dark {
+    background-color: black !important;
+  }
+  
+  .hidden-content {
+    display: flex;
+    float: right;
+    margin-right: 0px;
+  }
+  
+  .hidden-content i {
+    margin: auto 0;
+    font-size: 14px;
+    color: rgba(255, 174, 174, 0.55);
+  }
+  
+  #nav-clicker {
+    padding-right: 0 !important;
+    padding-left: 9px !important;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  #hidden-navbar .nav-link {
+    padding-right: 12px;
+  }
+  
+  @media only screen and (max-width: 1280px) {
+    .background-title {
+      display: none !important;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .card-gallery .popup-image .animated {
+      filter: none;
+      -webkit-filter: unset;
+    }
+    .main__content-title h1 {
+      font-size: 50px;
+    }
+    .main__content-title {
+      padding: 60px 0 !important;
+    }
+    .modal-content {
+      margin-top: 88px !important;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      float: right !important;
+      text-align: right;
+    }
+    #nav-navbar {
+      display: flex !important;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      padding-right: 22px !important;
+      padding-bottom: 12px !important;
+    }
+    #web-navbar {
+      display: none !important;
+    }
+    .header_layout {
+      padding-top: 0 !important;
+    }
+    .univer {
+      margin: 0 !important;
+    }
+    .footer__content {
+      padding: 30px 0 77px !important;
+    }
+    .galery {
+      margin-bottom: 0 !important;
+    }
+    .web-service {
+      display: none !important;
+    }
+    .nav-service {
+      display: block !important;
+    }
+    .line {
+      padding-bottom: 50px !important;
+      width: 80% !important;
+      display: none !important;
+    }
+    .main__content {
+      padding-top: 0 !important;
+    }
+    .status:last-child {
+      margin-top: 27px !important;
+    }
+    .about {
+      margin: 0 !important;
+      padding-bottom: 78px !important;
+    }
+    .left__content .colum_img {
+      display: none !important;
+    }
+    .content__header-title h1 h4 {
+      font-size: 2vw;
+    }
+    .member__content iframe {
+      margin: auto !important;
+      margin-bottom: 20px !important;
+    }
+    .delete_video {
+      display: none !important;
+    }
+    .delete_video:last-child {
+      margin-bottom: 0 !important;
+    }
+    #ballon {
+      display: none !important;
+    }
+    #galery_btn {
+      margin: 25px !important;
+    }
+    .endImg {
+      display: none;
+    }
+    /* .footer__content{
+      display:none;
+    } */
+    .navFooter {
+      display: flex;
+      position: fixed;
+      right: 0;
+      width: 100%;
+      bottom: 0;
+      z-index: 999;
+      background: #e0e0e0;
+    }
+  }
+  /* end navfoot */
+  .footer__content {
+    background-color: black;
+    text-align: center;
+    padding: 60px 0 40px;
+  }
+  
+  .footer__content-menu h3 {
+    color: #e7e7ee;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .mapper {
+    margin: 5px 0 25px;
+  }
+  
+  .modal-content {
+    margin-top: 152px;
+  }
+  
+  .menu__footer-ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .menu__footer-ul .footer__link {
+    color: #e7e7ee;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+  }
+  
+  .menu__footer-ul .footer__link:hover {
+    color: rgb(118, 144, 231);
+    transition: 0.3s;
+  }
+  
+  .copy__right {
+    /* margin-bottom: 20px; */
+  }
+  
+  .copy__right h4 {
+    color: #444444;
+    font-size: 15px;
+  }
+  
+  .footer__conntent-social {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__conntent-link {
+    color: white;
+    margin: 0 12px;
+    font-size: 25px;
+    transition: 0.5s;
+  }
+  
+  .footer__conntent-link:hover {
+    color: rgb(118, 144, 231);
+    transition: 0.5s;
+  }
+  
+  #ballon {
+    position: sticky;
+    top: 660px !important;
+    left: 1445px !important;
+    cursor: pointer;
+    font-size: 60px;
+    color: rgb(172, 16, 16);
+    z-index: 999;
+    transition: 0.5s;
+    visibility: hidden;
+  }
+  
+  #ballon:hover {
+    transition: 0.5s;
+    color: rgb(118, 144, 231);
+  }
+  
+  /* album */
+  
+  .album {
+    background: #13181d;
+    padding-bottom: 120px;
+  }
+  
+  #album {
+    color: #13181d;
+    padding: 120px 0;
+  }
+  
+  .playlist__content {
+    margin: 0 auto;
+  }
+  
+  /* slider */
+  .carousel-inner {
+    padding-bottom: 15px;
+  }
+  
+  .carousel-inner .carousel-item {
+    max-height: 671px;
+  }
+  
+  .carousel-caption {
+    display: flex;
+    margin-bottom: 225px;
+    max-height: 200px;
+    padding: 0;
+  }
+  
+  .carousel-caption h1 {
+    font-family: "Zen Tokyo Zoo", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 11px;
+    position: absolute;
+    color: #dc3545;
+    top: -135px;
+    left: 50%;
+    transform: translate(-49%, 0);
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .carousel-caption h1:hover {
+    transition: 0.3s;
+    color: #e71c31;
+  }
+  
+  .carousel-caption h5 {
+    font-family: "Staatliches", cursive;
+    font-size: 26px;
+    letter-spacing: 4px;
+    margin-bottom: 27px;
+  }
+  .carousel-caption p {
+    font-size: 18px;
+  }
+  .carousel-caption button {
+    margin-top: 50px;
+  }
+  /* Main title */
+  
+  .about {
+    justify-content: center;
+    /* background: white; */
+    padding: 120px 0 0;
+    /* height: 540px; */
+    /* margin: 0 160px; */
+  }
+  
+  .about__left,
+  .about__right {
+    margin: 0 auto;
+  }
+  
+  .about__left img {
+    border-radius: 40px;
+    width: 100%;
+    height: 568px;
+  }
+  
+  .about__right {
+    font-family: "Staatliches", cursive;
+    justify-content: center;
+    /* position: absolute; */
+  }
+  
+  .about__right #about {
+    color: #333333;
+  }
+  
+  .line {
+    padding: 140px 0 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .line img {
+    height: 40px;
+    margin-bottom: -20px;
+  }
+  .status-object {
+    justify-content: center;
+  }
+  
+
+  
+  /* scroll */
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track-piece {
+    border-radius: 10px;
+    border-radius: 20px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2b2e42;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* child-page */
+  .status{
+      margin: 5px 0 25px;
+      padding: 0 6px;
+      /* width: 100%; */
+  }
+
+  .status h3 {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .status img{
+      width: 100%;
+      margin: 5px 0;
+  }
+  .gallery{
+    text-align: center;
+  }
+  .gallery img{
+    width: 100%;
+  }
+
+  #colectionImg{
+    margin: 0 auto !important;
+  }
+
+  .mfp-close{
+    display: none !important;
+  }
+  .mfp-img{
+    max-height:  639.699px !important;
+  }
+  .mfp-content{
+    margin-top: 60px !important;
+  }

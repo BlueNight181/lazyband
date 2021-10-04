@@ -171,8 +171,8 @@ a {
   margin: 26px 0 0 20px;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-in;
-  transition: max-height 0.2s ease-in;
+  -webkit-transition: max-height 0.3s ease-in;
+  transition: max-height 0.3s ease-in;
   z-index: 3;
 }
 
@@ -181,7 +181,7 @@ a {
 }
 
 .hidden_menu .dropdown-item:hover {
-  transition: 0.2s;
+  transition: 0.3s;
   color: rgb(137, 153, 243);
   background-color: whitesmoke;
   font-weight: 500;
@@ -829,7 +829,7 @@ button:focus {
 }
 
 .copy__right {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .copy__right h4 {
@@ -1012,4 +1012,15 @@ button:focus {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+/* popup image */
+.mfp-close{
+  display: none !important;
+}
+.mfp-img{
+  max-height:  639.699px !important;
+}
+.mfp-content{
+  margin-top: 60px !important;
 }
